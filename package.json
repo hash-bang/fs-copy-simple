@@ -1,0 +1,25 @@
+{
+  "name": "fs-copy-simple",
+  "version": "1.0.0",
+  "description": "Exceptionally simple module to just copy-the-damn-file. No globs, just copy",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hash-bang/fs-copy-simple"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "fs",
+    "copy",
+    "file"
+  ],
+  "author": "Matt Carter <m@ttcarter.com> (https://github.com/hash-bang)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
+    "temp": "^0.8.3"
+  }
+}
