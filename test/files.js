@@ -2,9 +2,9 @@ var copy = require('..');
 var expect = require('chai').expect;
 var temp = require('temp').track();
 
-describe('copy()', function() {
+describe('copy() with files', function() {
 	it('file -> file', function(next) {
-		var src = __dirname + '/test.js';
+		var src = __dirname + '/files.js';
 		var dst = temp.path();
 		copy(src, dst, function(err) {
 			expect(err).to.be.not.ok;
@@ -13,7 +13,7 @@ describe('copy()', function() {
 	});
 
 	it('file -> dir', function(next) {
-		var src = __dirname + '/test.js';
+		var src = __dirname + '/files.js';
 		temp.mkdir('fs-copy-simple-1', function(err, dst) {
 			if (err) return next(err);
 			copy(src, dst, function(err) {

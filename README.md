@@ -15,6 +15,6 @@ Written in frustration that all NPM copy libraries seem to spend an inordinate a
 
 copy(src, dst, callback)
 ========================
-Pass in a source path, a destination path (or directory) and a callback for errors. Thats it.
+Pass in a source path (or buffer), a destination path (or directory) and a callback for errors. Thats it.
 
 This function will error on non-existant files, trying to copy a directory to another directory or pretty much anything thats not a valid source file to either a destination path OR a directory to copy into.
