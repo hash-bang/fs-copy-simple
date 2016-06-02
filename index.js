@@ -34,7 +34,7 @@ function copy(src, dst, callback) {
 			} else if (this.srcStat && this.srcStat.isDirectory()) { // Dir -> File (!?)
 				next('Cannot copy a directory into an existing file, remove the destination file first');
 			} else if (this.dstStat && this.dstStat.isDirectory()) { // File -> Dir
-				dst += fspath.basename(src);
+				dst += '/' + fspath.basename(src);
 				copyFile(src, dst, next);
 			} else if (this.srcStat) { // File -> File
 				copyFile(src, dst, next);

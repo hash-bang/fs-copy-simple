@@ -1,6 +1,6 @@
 {
   "name": "fs-copy-simple",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Exceptionally simple module to just copy-the-damn-file. No globs, just copy",
   "main": "index.js",
   "repository": {
